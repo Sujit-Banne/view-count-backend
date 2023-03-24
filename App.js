@@ -47,7 +47,7 @@ app.post('/viewcount', async (req, res) => {
     }
 });
 
-mongoose.connect('mongodb://localhost:27017/viewcount', {
+mongoose.connect('mongodb+srv://admin:admin@view-count.7f05nyf.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
